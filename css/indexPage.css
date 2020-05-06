@@ -1,0 +1,398 @@
+.pc {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+.content {
+    background-color: white;
+}
+
+#header {
+    background-image: url(../imagens/capa_site.png);
+    background-position: center;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+#top {
+    display: block;
+}
+
+#logo {
+    background-image: url(../imagens/logo.png);
+    width: 125px;
+    height: 45px;
+    float: left;
+    position: sticky;
+}
+
+#top ul {
+    float: right;
+    position: relative;
+}
+
+#top ul li {
+    float: left;
+    list-style-type: none;
+    margin: 20px;
+}
+
+#top ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#top ul li a:hover {
+    color: #40e1bd;
+}
+
+#top ul li #nav-dicas {
+    font-size: 13px;
+    border: 1px solid #40e1bd;
+    color: #40e1bd;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#top ul li button {
+    background-color: white;
+    color: slateblue;
+    margin-top: -15px;
+}
+
+.dropdown ul {
+    display: block;
+    position: absolute;
+    width: 170px;
+    margin-top: 30px;
+    margin-left: -200px;
+    background-color: slateblue;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 1S ease;
+    border-radius: 10px;
+}
+
+.dropdown:hover ul {
+    display: block;
+    max-height: 180px;
+}
+
+#content-top {
+    display: block;
+    margin-top: 90px;
+    float: left;
+}
+
+#content-top h1 {
+    color: white;
+    display: block;
+}
+
+#content-top h3 {
+    color: white;
+    display: block;
+}
+
+#content-top #button-1 {
+    background-color: white;
+    color: darkslateblue;
+}
+
+#content-top #button-2 {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+#content-top table {
+    width: 100%;
+    margin-top: 40px;
+    float: left;
+}
+
+#content-1 td {
+    width: 50%;
+}
+
+#content-1 img {
+    width: 90%;
+    float: right;
+}
+
+#content-2 {
+    margin: 10px auto;
+    display: block;
+    width: 90%;
+}
+
+#content-2 td {
+    padding: 30px 10px;
+}
+
+#content-2 tbody {
+    margin: 30px auto;
+    display: block;
+}
+
+#content-2 h3 {
+    text-align: center;
+    margin: 20px;
+}
+
+#content-2 button {
+    margin: 5px auto;
+    display: block;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 1px solid slateblue;
+    width: 90%;
+}
+
+#content-2 #contact-button {
+    background-color: darkslateblue;
+    color: white;
+    width: 80%;
+    margin-bottom: 40px;
+}
+
+#content-3 {
+    background-color: #f7f8f9;
+    padding: 50px;
+}
+
+#content-3 h1 {
+    text-align: center;
+    padding: 20px;
+    width: 60%;
+}
+
+#content-3 p {
+    width: 60%;
+    text-align: center;
+    padding: 20px;
+}
+
+#content-4 {
+    padding: 20px;
+}
+
+#content-4 h1 {
+    padding: 20px;
+    text-align: center;
+}
+
+#content-4 img {
+    display: block;
+    width: 70%;
+}
+
+#content-5 h1 {
+    text-align: center;
+}
+
+#content-5 p {
+    width: 70%;
+    text-align: center;
+}
+
+#content-5 {
+    padding: 20px;
+    background-color: #f7f8f9;
+}
+
+#content-5 img {
+    padding: 50px;
+}
+
+#content-6 {
+    background: darkslateblue;
+    height: 770px;
+    padding: 20px;
+    padding-top: 100px;
+}
+
+#content-6 h1 {
+    margin-top: -290px;
+    color: white;
+}
+
+#content-6 p {
+    color: white;
+    font-family: Conamore Thin;
+    margin-top: 20px;
+}
+
+#content-6 .input-text {
+    width: 90%;
+    margin: 20px 20px;
+    color: white;
+}
+
+#content-6 .input-text:focus {
+    text-decoration-style: none;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+#content-6 .input-text::placeholder {
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+#content-6 .input-submit {
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 85%;
+    color: darkslateblue;
+    cursor: pointer;
+    text-align: center;
+}
+
+#content-6 label {
+    color: darkslateblue;
+    text-transform: uppercase;
+}
+
+div.sticky {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: #1a2024;
+    margin-bottom: -1000px;
+    height: 1000px;
+}
+
+@media (max-width: 400px) {
+    #header {
+        background-size: 4em;
+        margin: 0;
+    }
+    #content-2 {
+        margin: 0 auto;
+        display: block;
+    }
+    #content-2 p {
+        width: auto;
+        text-align: center;
+    }
+    #content-2 td {
+        padding: 0;
+    }
+    #content-2 tbody {
+        float: inherit;
+        margin: 0;
+        display: block;
+    }
+    #content-2 h3 {
+        float: inherit;
+        text-align: center;
+        margin: 0px;
+    }
+    #content-2 button {
+        margin: 50px auto;
+        display: block;
+        background-color: transparent;
+        border-radius: 20px;
+        border: 1px solid slateblue;
+    }
+    #content-2 #contact-button {
+        margin-top: 5px;
+        background-color: darkslateblue;
+        color: white;
+    }
+    #content-3 {
+        margin: 0;
+        width: 100%;
+        padding: 30px 0;
+    }
+    #content-3 h1 {
+        text-align: center;
+        padding: 0;
+        width: 100%;
+    }
+    #content-3 p {
+        text-align: center;
+        margin-top: 20px;
+        width: 90%;
+    }
+    .space {
+        display: none;
+    }
+}
+
+@media (max-width: 1190px) {
+    #logo {
+        background-image: url(../imagens/logo_preta.png);
+    }
+    #content-2 td div {
+        display: none;
+    }
+    .pc {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    #list {
+        position: absolute;
+        background-color: slateblue;
+        margin: -20px 0 0 -185px;
+        float: right;
+        height: 0px;
+        width: 200px;
+        overflow: hidden;
+        transition: height 1S ease;
+        border-radius: 15px;
+    }
+    .dropdown ul {
+        margin-right: -50px;
+    }
+    ul li:hover #list {
+        display: block;
+        height: 480px;
+    }
+    #list li {
+        margin: 0 auto;
+        display: block;
+    }
+    #list li a {
+        text-align: center;
+    }
+    #header {
+        background-size: 160%;
+        margin: 0;
+    }
+    #content-1 {
+        margin: 0px;
+        margin-bottom: 60px;
+    }
+    #content-6 {
+        background: darkslateblue;
+        height: 750px;
+        padding: 20px;
+        padding-top: 100px;
+    }
+    #content-6 h1 {
+        margin-top: -80px;
+        color: white;
+        text-align: center;
+    }
+    #content-6 p {
+        color: white;
+        font-family: Conamore Thin;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .sticky p {
+        width: 70%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
